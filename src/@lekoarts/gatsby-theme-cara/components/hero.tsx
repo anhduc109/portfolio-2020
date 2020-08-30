@@ -153,26 +153,26 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       factor={factor}
     >
       <Inner>
-        <Fade bottom duration={300} delay={500}>
-          <div>
-            <h1
-              sx={{
-                fontSize: [6, 7, 8],
-                mt: 2,
-                mb: 3,
-                textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
-                letterSpacing: `wide`,
-                color: `heading`,
-                lineHeight: ["70px"],
-              }}
-            >
-              Hi, I'm Duc Pham
-            </h1>
-          </div>
-        </Fade>
-        <Fade bottom duration={300} delay={800}>
-          <p>I build Web Applications</p>
-        </Fade>
+        {/* <Fade bottom duration={300} delay={500}> */}
+        <div>
+          <h1
+            sx={{
+              fontSize: [6, 7, 8],
+              mt: 2,
+              mb: 3,
+              textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
+              letterSpacing: `wide`,
+              color: `heading`,
+              lineHeight: ["70px"],
+            }}
+          >
+            Hi, I'm Duc Pham
+          </h1>
+        </div>
+        {/* </Fade> */}
+        {/* <Fade bottom duration={300} delay={800}> */}
+        <p>I build Web Applications</p>
+        {/* </Fade> */}
       </Inner>
     </Content>
   </div>
