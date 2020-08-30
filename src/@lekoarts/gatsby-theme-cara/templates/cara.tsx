@@ -10,8 +10,10 @@ const Cara = () => {
   const [isMobileSize, setIsMobileSize] = useState<boolean>();
 
   useEffect(() => {
-    setIsMobileSize(window.innerWidth < 768);
-  }, [window.innerWidth]);
+    if (typeof window !== "undefined") {
+      setIsMobileSize(window.innerWidth < 768);
+    }
+  }, []);
 
   return (
     <Layout>
