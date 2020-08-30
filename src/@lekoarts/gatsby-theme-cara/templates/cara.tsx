@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Parallax } from "react-spring/renderprops-addons.cjs";
 import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout";
 import Hero from "@lekoarts/gatsby-theme-cara/src/components/hero";
@@ -7,7 +7,12 @@ import About from "@lekoarts/gatsby-theme-cara/src/components/about";
 import Contact from "@lekoarts/gatsby-theme-cara/src/components/contact";
 
 const Cara = () => {
-  const isMobileSize = window && window.innerWidth < 768;
+  const [isMobileSize, setIsMobileSize] = useState<boolean>();
+
+  useEffect(() => {
+    setIsMobileSize(window.innerWidth < 768);
+  }, [window.innerWidth]);
+
   return (
     <Layout>
       <Parallax pages={isMobileSize ? 6 : 5}>
