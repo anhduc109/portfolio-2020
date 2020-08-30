@@ -41,7 +41,7 @@ const Contact = ({
           sx={{
             position: `relative`,
             height: `full`,
-            svg: { width: `100%`, height: `50vh` },
+            svg: { width: `100%`, height: `40vh` },
           }}
         >
           <svg
