@@ -40,7 +40,7 @@ const Projects = ({
           <h1
             sx={{
               fontSize: [5, 6],
-              color: "text",
+              color: "heading",
               textShadow: "rgba(255,255,255,0.15) 0px 5px 35px",
             }}
           >

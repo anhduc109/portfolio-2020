@@ -28,7 +28,6 @@ const ProjectCard = ({
       gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
       gridAutoFlow: "dense",
       mb: 50,
-      // color: "white",
     }}
   >
     <div
@@ -57,6 +56,7 @@ const ProjectCard = ({
         sx={{
           textTransform: `uppercase`,
           letterSpacing: `wide`,
+          color: "heading",
           fontSize: [3, 4],
           fontWeight: `medium`,
           lineHeight: 1,
