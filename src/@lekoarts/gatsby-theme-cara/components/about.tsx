@@ -14,7 +14,8 @@ import AboutMDX from "../sections/about";
 const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
-      bg="divider"
+      //   bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
+      bg="linear-gradient(45deg, #21D4FD 0%, #B721FF 100%)"
       //   clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)"
       clipPath="polygon(0 15%, 100% 25%, 100% 85%, 0 75%)"
       speed={0.2}

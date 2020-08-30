@@ -22,7 +22,7 @@ const Cara = () => {
         <About offset={1} factor={1} />
         <Projects
           offset={isMobileSize ? 2.5 : 2}
-          factor={isMobileSize ? 2.2 : 1.8}
+          factor={isMobileSize ? 2.8 : 1.8}
         />
         <Contact offset={isMobileSize ? 5 : 4} factor={1} />
       </Parallax>
