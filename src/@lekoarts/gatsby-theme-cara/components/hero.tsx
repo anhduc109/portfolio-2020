@@ -153,7 +153,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       factor={factor}
     >
       <Inner>
-        <Fade bottom duration={200}>
+        <Fade bottom duration={300} delay={500}>
           <div>
             <h1
               sx={{
@@ -170,7 +170,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
             </h1>
           </div>
         </Fade>
-        <Fade bottom duration={200} delay={200}>
+        <Fade bottom duration={300} delay={800}>
           <p>I build Web Applications</p>
         </Fade>
       </Inner>
