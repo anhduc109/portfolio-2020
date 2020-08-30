@@ -14,6 +14,8 @@ import ProjectsMDX from "../sections/projects";
 import ProjectCard from "./project-card";
 import SMS from "../images/sms-api.png";
 import WEAR from "../images/wear.png";
+import CountriesList from "../images/countries-list.png";
+import UTube from "../images/utube.png";
 
 const Projects = ({
   offset,
@@ -52,17 +54,35 @@ const Projects = ({
             bg={SMS}
             isImageLeft={true}
             githubLink="/buncha"
-            children="SMS is a new internal, online tool which is used by Integrify to manage hundreds of students, courses and the existing ESR tool - online testing of applicants. I'm working as an occasional Scrum Master and a Backend Developer with 4 other teammates."
+            children="SMS is a new internal, online tool which is used by Integrify to manage hundreds of students, courses and the existing ESR tool - online testing of applicants. I'm working as an occasional Scrum Master and a Backend Developer with 4 other teammates"
             techStack="Node.js NestJS REST API TypeScript PostgreSQL TypeORM Jest Github Actions Docker"
           />
           <ProjectCard
             title="WEAR"
-            link="https://www.behance.net/gallery/58937147/Freiheit"
+            link="https://wear.netlify.com/"
             bg={WEAR}
             isImageLeft={false}
-            githubLink="/buncha"
+            githubLink="https://github.com/anhduc109/WEAR-E-Commerce"
             children="A well designed E-Commerce website in clothing fashion inspired by Zara with Google log-in system, protected admin/user routes in both backend/frontend"
-            techStack="React with Hooks TypeScript Redux Redux Saga/Thunk Material UI Node.js Express Passport JWT"
+            techStack="MERN Stack Redux TypeScript REST API JWT Jest Material UI"
+          />
+          <ProjectCard
+            title="Countries List"
+            link="https://countries-list.netlify.com/"
+            bg={CountriesList}
+            isImageLeft={true}
+            githubLink="https://github.com/anhduc109/Countries-List"
+            children="A Web Application that contains information about all the countries in the world with a favorite section cached from local storage"
+            techStack="React Hooks TypeScript Redux Redux Saga/Thunk Material UI"
+          />
+          <ProjectCard
+            title="Utube"
+            link="https://anhduc109.github.io/youtube-clone/"
+            bg={UTube}
+            isImageLeft={false}
+            githubLink="https://github.com/anhduc109/youtube-clone"
+            children="A personal responsive, mobile-friendly Youtube app made by fetching api from GoogleAPI"
+            techStack="React Hooks react-bootstrap Google API"
           />
         </div>
       </Inner>
