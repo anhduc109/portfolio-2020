@@ -12,6 +12,7 @@ module.exports = {
     siteTitle: `Duc Pham Portfolio`,
     siteTitleAlt: `Duc Pham Portfolio`,
     siteHeadline: `Duc Pham Portfolio`,
+    siteImage: `static/banner.jpg`,
     siteDescription: `Hi, I'm Duc Pham - a highly adaptable Full-Stack Developer based in Helsinki, Finland. I love reaching the completion stages of all tasks with a keen eye for detail.`,
     siteLanguage: `en`,
     author: `Duc Pham`,
