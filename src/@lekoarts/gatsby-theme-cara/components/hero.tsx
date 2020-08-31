@@ -200,9 +200,9 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               height="45"
               width="45"
               viewBox="0 0 24 24"
-              fill="white"
               stroke="currentColor"
               stroke-width="2"
+              fill="transparent"
               stroke-linecap="round"
               stroke-linejoin="round"
               onClick={toggleColorMode}
