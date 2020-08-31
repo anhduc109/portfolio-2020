@@ -19,10 +19,10 @@ const Cara = () => {
     <Layout>
       <Parallax pages={isMobileSize ? 6 : 5}>
         <Hero offset={0} factor={1} />
-        <About offset={1} factor={1} />
+        <About offset={1} factor={isMobileSize ? 1.5 : 1.5} />
         <Projects
           offset={isMobileSize ? 2.5 : 2}
-          factor={isMobileSize ? 2.8 : 1.8}
+          factor={isMobileSize ? 2.8 : 1.7}
         />
         <Contact offset={isMobileSize ? 5 : 4} factor={1} />
       </Parallax>
