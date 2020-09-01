@@ -36,6 +36,9 @@ const ProjectCard = ({
       <a
         href={link}
         target="_blank"
+        onClick={() => {
+          link === "#" && event.preventDefault();
+        }}
         sx={{
           width: `100%`,
           boxShadow: `lg`,
@@ -47,6 +50,7 @@ const ProjectCard = ({
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           height: [200, 200, 300],
+          cursor: "pointer",
           transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
           "&:hover": {
             color: `white !important`,
