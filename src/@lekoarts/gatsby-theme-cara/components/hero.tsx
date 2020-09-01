@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import { useState, useEffect } from "react";
 import { jsx, useColorMode } from "theme-ui";
 import Divider from "@lekoarts/gatsby-theme-cara/src/elements/divider";
 import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner";
@@ -10,11 +11,18 @@ import {
 } from "@lekoarts/gatsby-theme-cara/src/styles/animations";
 import { Fade } from "react-reveal";
 // @ts-ignore
-import Intro from "../sections/intro";
 
 const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
   const [colorMode, setColorMode] = useColorMode();
   const isDark = colorMode === `dark`;
+  const [isMobileSize, setIsMobileSize] = useState<boolean>();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsMobileSize(window.innerWidth < 768);
+    }
+  }, []);
+
   const toggleColorMode = (e: any) => {
     setColorMode(isDark ? `light` : `dark`);
   };
@@ -177,13 +185,13 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           {isDark ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
+              width={isMobileSize ? "50" : "70"}
+              height={isMobileSize ? "50" : "70"}
               viewBox="0 0 24 24"
               fill="white"
               sx={{
-                mt: 3,
-                mr: 3,
+                mt: isMobileSize ? 3 : 4,
+                mr: isMobileSize ? 3 : 5,
                 transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
                 "&:hover": {
                   transform: `translateY(-5px)`,
@@ -197,8 +205,8 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              height="45"
-              width="45"
+              height={isMobileSize ? "45" : "65"}
+              width={isMobileSize ? "45" : "65"}
               viewBox="0 0 24 24"
               stroke="currentColor"
               stroke-width="2"
@@ -207,8 +215,8 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               stroke-linejoin="round"
               onClick={toggleColorMode}
               sx={{
-                mt: 3,
-                mr: 3,
+                mt: isMobileSize ? 3 : 4,
+                mr: isMobileSize ? 3 : 5,
                 transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
                 "&:hover": {
                   transform: `translateY(-5px)`,

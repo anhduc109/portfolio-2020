@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import { useState, useEffect } from "react";
 import { jsx, useColorMode } from "theme-ui";
 import Divider from "@lekoarts/gatsby-theme-cara/src/elements/divider";
 import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner";
@@ -26,6 +27,13 @@ const Projects = ({
 }) => {
   const colorMode = useColorMode();
   const btnBorderColor = colorMode[0] === "dark" ? "white" : "#1a202c";
+  const [isMobileSize, setIsMobileSize] = useState<boolean>();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsMobileSize(window.innerWidth < 768);
+    }
+  }, []);
 
   return (
     <div>
@@ -97,12 +105,11 @@ const Projects = ({
             >
               <button
                 sx={{
-                  appearance: "none",
                   bg: "transparent",
                   border: `2px solid ${btnBorderColor}`,
                   borderRadius: 6,
-                  padding: "1.25rem 1.75rem",
-                  fontSize: "18px",
+                  padding: isMobileSize ? "0.8rem 1.3rem" : "1.25rem 1.75rem",
+                  fontSize: "16px",
                   color: "text",
                   cursor: "pointer",
                   transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
@@ -120,7 +127,7 @@ const Projects = ({
                   },
                 }}
               >
-                Show More On Github
+                Show More
               </button>
             </a>
           </div>
