@@ -2,7 +2,7 @@
 
 ### 🖥 Check out at: https://ducphamm.com/
 
-#### 🕶 Tech used:
+#### 🧐 Tech used:
 - React
 - Gatsby
 
