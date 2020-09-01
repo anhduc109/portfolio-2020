@@ -7,5 +7,5 @@
 - React
 - Gatsby
 
-Inspired by [Lekoarts Theme](https://themes.lekoarts.de)
+Inspired by [Lekoarts](https://github.com/LekoArts)
 
