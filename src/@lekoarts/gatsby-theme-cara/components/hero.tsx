@@ -192,6 +192,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               sx={{
                 mt: isMobileSize ? 3 : 4,
                 mr: isMobileSize ? 3 : 5,
+                cursor: "pointer",
                 transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
                 "&:hover": {
                   transform: `translateY(-5px)`,
@@ -217,6 +218,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               sx={{
                 mt: isMobileSize ? 3 : 4,
                 mr: isMobileSize ? 3 : 5,
+                cursor: "pointer",
                 transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
                 "&:hover": {
                   transform: `translateY(-5px)`,
