@@ -63,7 +63,7 @@ const Projects = ({
             </h1>
             <ProjectCard
               title="Integrify's Student Management System API"
-              link="https://www.behance.net/gallery/58937147/Freiheit"
+              link=""
               bg={SMS}
               isImageLeft={true}
               githubLink="/buncha"
