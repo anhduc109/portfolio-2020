@@ -3,6 +3,7 @@
 ### 🖥 Check out at: https://ducphamm.com/
 
 #### 🧐 Tech used:
+- TypeScript
 - React
 - Gatsby
 
