@@ -63,10 +63,10 @@ const Projects = ({
             </h1>
             <ProjectCard
               title="Integrify's Student Management System API"
-              link=""
+              link="/"
               bg={SMS}
               isImageLeft={true}
-              githubLink=""
+              githubLink="/"
               children="SMS is a new internal, online tool which is used by Integrify to manage hundreds of students, courses and the existing ESR tool - online testing of applicants. I'm working as an occasional Scrum Master and a Backend Developer with 4 other teammates"
               techStack="Node.js NestJS REST API TypeScript PostgreSQL TypeORM Jest Github Actions Docker"
             />
