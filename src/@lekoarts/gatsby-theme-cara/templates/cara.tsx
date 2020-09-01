@@ -10,9 +10,13 @@ const Cara = () => {
   const [isMobileSize, setIsMobileSize] = useState<boolean>();
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setIsMobileSize(window.innerWidth < 768);
-    }
+    const handleResize = () => {
+      if (typeof window !== "undefined") {
+        setIsMobileSize(window.innerWidth < 768);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
