@@ -139,14 +139,14 @@ const Projects = ({
       </Content>
       <Divider speed={0.1} offset={offset} factor={factor}>
         <UpDown>
+          <SVG icon="box" width={6} color="icon-yellow" left="85%" top="75%" />
           <SVG
-            icon="box"
-            width={6}
-            color="icon_brightest"
-            left="85%"
-            top="75%"
+            icon="upDown"
+            width={8}
+            color="icon_darkest"
+            left="70%"
+            top="20%"
           />
-          <SVG icon="upDown" width={8} color="icon_teal" left="70%" top="20%" />
           <SVG
             icon="triangle"
             width={8}
@@ -159,7 +159,7 @@ const Projects = ({
             icon="circle"
             hiddenMobile
             width={24}
-            color="icon_brightest"
+            color="icon_darkest"
             left="17%"
             top="60%"
           />
@@ -177,7 +177,7 @@ const Projects = ({
             icon="triangle"
             width={12}
             stroke
-            color="icon_brightest"
+            color="icon_green"
             left="90%"
             top="30%"
           />
@@ -193,14 +193,14 @@ const Projects = ({
             hiddenMobile
             width={16}
             stroke
-            color="icon_teal"
+            color="icon_yellow"
             left="18%"
             top="75%"
           />
           <SVG
             icon="circle"
             width={6}
-            color="icon_brightest"
+            color="icon_darker"
             left="75%"
             top="10%"
           />
@@ -217,7 +217,7 @@ const Projects = ({
           icon="circle"
           hiddenMobile
           width={6}
-          color="icon_brightest"
+          color="icon_darker"
           left="4%"
           top="20%"
         />
