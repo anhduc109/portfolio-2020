@@ -262,6 +262,40 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           <Fade bottom duration={300} delay={1200}>
             <p>I build Web Applications</p>
           </Fade>
+          <Fade bottom duration={300} delay={1500}>
+            <button
+              onClick={() => {
+                window.open(
+                  "https://drive.google.com/file/d/13kzEFLvrygssRWGEEtLl_HP6pn3OKbwd/view?usp=sharing",
+                  "_blank"
+                );
+              }}
+              sx={{
+                bg: "transparent",
+                border: `2px solid ${isDark ? "white" : "#1a202c"}`,
+                borderRadius: 6,
+                padding: isMobileSize ? "0.8rem 1.3rem" : "1.25rem 1.75rem",
+                fontSize: "16px",
+                color: "text",
+                cursor: "pointer",
+                transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
+                "&:hover": {
+                  transform: `translateY(-5px)`,
+                  boxShadow: `xl`,
+                },
+                "&:active": {
+                  outline: `none`,
+                  border: `2px solid ${isDark ? "white" : "#1a202c"}`,
+                },
+                "&:focus": {
+                  outline: `none`,
+                  border: `2px solid ${isDark ? "white" : "#1a202c"}`,
+                },
+              }}
+            >
+              Resume
+            </button>
+          </Fade>
         </Inner>
       </Content>
     </div>
