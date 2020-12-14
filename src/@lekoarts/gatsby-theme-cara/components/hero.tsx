@@ -263,7 +263,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
             <p>I build Web Applications</p>
           </Fade>
           <Fade bottom duration={300} delay={1500}>
-            <button
+            {/* <button
               onClick={() => {
                 window.open(
                   "https://drive.google.com/file/d/13kzEFLvrygssRWGEEtLl_HP6pn3OKbwd/view?usp=sharing",
@@ -294,7 +294,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               }}
             >
               Resume
-            </button>
+            </button> */}
           </Fade>
         </Inner>
       </Content>
